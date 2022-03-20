@@ -1,12 +1,18 @@
 [package]
-name = "genetic-algorithm-traits"
+name = "bloomfilter-rs"
 version = "0.1.0"
 edition = "2021"
 authors = ["Tim Toebrock"]
 license = "MIT"
 description = """
-Traits that can be used to implement genetic-algorithms for a specific domain.
+A conveniently simple implemenation of a bloomfilter.
 """
+
+[dependencies]
+cli-table = "0.4.6"
+fasthash-fork = "0.4.1" 
+rand = "0.8.5"
+
 
 [profile.dev]
 opt-level = 3
